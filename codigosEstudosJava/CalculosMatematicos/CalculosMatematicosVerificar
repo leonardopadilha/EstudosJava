@@ -1,0 +1,20 @@
+package Exercicios;
+
+public class CalculosMatematicosVerificar {
+
+	public static void main(String[] args) {
+		
+		CalculosMatematicos calculos = new CalculosMatematicos();
+		
+		calculos.somar(8, 2);
+		System.out.println("O resultado da soma é " + calculos.getSomar());
+		
+		System.out.println(" ");
+		
+		calculos.dividir(6, 0);
+		System.out.println("O resultado da divisão é " + calculos.getDividir());
+		
+	}
+
+}
+
