@@ -1,0 +1,64 @@
+package Exercicios;
+
+public class CalculosMatematicos {
+	
+	private int somar;
+	private int multiplicar;
+	private int dividir;
+	private int subtrair;
+	private int modulo;
+	
+	public int getSomar() {
+		return somar;
+	}
+	public void setSomar(int somar) {
+		this.somar = somar;
+	}
+	
+	public int getMultiplicar() {
+		return multiplicar;
+	}
+	
+	public void setMultiplicar(int multiplicar) {
+		this.multiplicar = multiplicar;
+	}
+	
+	public int getSubtrair() {
+		return subtrair;
+	}
+	
+	public void setSubtrair(int subtrair) {
+		this.subtrair = subtrair;
+	}
+	
+	public int getDividir() {
+		return dividir;
+	}
+	
+	public void setDividir(int dividir) {
+		this.dividir = dividir;
+	}
+	
+	public int getModulo() {
+		return modulo;
+	}
+	
+	public void setModulo(int modulo) {
+		this.modulo = modulo;
+	}
+	
+	public void somar (int num1, int num2) {
+		int resultSoma = num1 + num2;
+		this.setSomar(resultSoma);
+	}
+	
+	public void dividir(int div1, int div2) {
+			if(div1 == 0 || div2 == 0) {
+				System.out.println("A divisão não pode ser feita por 0");
+			}else {
+				int resultDvisao = div1 / div2;
+				this.setDividir(resultDvisao);
+			}
+	}
+}
+
