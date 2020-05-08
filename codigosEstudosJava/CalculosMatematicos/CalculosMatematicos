@@ -47,9 +47,10 @@ public class CalculosMatematicos {
 		this.modulo = modulo;
 	}
 	
-	public void somar (int num1, int num2) {
+	public void somar(int num1, int num2) {
 		int resultSoma = num1 + num2;
 		this.setSomar(resultSoma);
+		System.out.println("O resultado da soma é " + this.getSomar());
 	}
 	
 	public void dividir(int div1, int div2) {
@@ -58,7 +59,32 @@ public class CalculosMatematicos {
 			}else {
 				int resultDvisao = div1 / div2;
 				this.setDividir(resultDvisao);
+				System.out.println("O resultado da divisão é " + this.getDividir());
 			}
+	}
+	
+	public void modulo(int modulo) {
+		int resultModulo = modulo % 2;
+		this.setModulo(resultModulo);
+		if(resultModulo % 2 == 0) {
+			System.out.println("O número " + modulo + " é par, pois o resto da divisão por 2 é " 
+		                        + this.getModulo());
+		}else {
+			System.out.println("O número " + modulo + " não é par, pois o resto da divisão é " 
+								+ this.getModulo());
+		}
+	}
+	
+	public void subtrair(int num1, int num2) {
+		int resultSubtrair = num1 - num2;
+		this.setSubtrair(resultSubtrair);
+		System.out.println("O resultado da subtração é " + this.getSubtrair());
+	}
+	
+	public void multiplicar(int num1, int num2) {
+		int resultMultiplicar = num1 * num2;
+		this.setMultiplicar(resultMultiplicar);
+		System.out.println("O resultado da subtração é " + this.getMultiplicar());
 	}
 }
 
