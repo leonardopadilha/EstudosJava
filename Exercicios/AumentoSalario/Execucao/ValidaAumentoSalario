@@ -1,0 +1,29 @@
+package Exercicios;
+
+public class ValidaAumentoSalario {
+    public static void main(String[] args) {
+        AumentoSalario aumento = new AumentoSalario();
+
+        System.out.println(" ");
+        System.out.println("1º) Funcionário: ");
+        aumento.calculaAumentoSalarial(400.00f);
+
+        System.out.println(" ");
+        System.out.println("2º) Funcionário: ");
+        aumento.calculaAumentoSalarial(800.00f);
+
+        System.out.println(" ");
+        System.out.println("3º) Funcionário: ");
+        aumento.calculaAumentoSalarial(1200.00f);
+
+        System.out.println(" ");
+        System.out.println("4º) Funcionário: ");
+        aumento.calculaAumentoSalarial(1500.00f);
+
+        System.out.println(" ");
+        System.out.println("5º) Funcionário: ");
+        aumento.calculaAumentoSalarial(2500.00f);
+
+    }
+}
+

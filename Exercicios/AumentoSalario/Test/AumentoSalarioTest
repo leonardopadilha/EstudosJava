@@ -1,0 +1,54 @@
+package Exercicios;
+
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+public class AumentoSalarioTest {
+
+    @Test
+    @DisplayName("Calcula primeira faixa De 0 até 400.00 - 15%")
+    public void AumentoSalarialPrimeiraFaixaTest(){
+        AumentoSalario aumentoPrimeiraFaixa = new AumentoSalario();
+
+        aumentoPrimeiraFaixa.calculaAumentoSalarial(400.00f);
+        assertEquals(460.00, 460.00);
+    }
+
+    @Test
+    @DisplayName("Calcula segunda faixa De 400.01 até 800.00 - 12%")
+    public void AumentoSalarialSegundaFaixaTest(){
+        AumentoSalario aumentoSegundaFaixa = new AumentoSalario();
+
+        aumentoSegundaFaixa.calculaAumentoSalarial(800.00f);
+        assertEquals(896.00, 896.00);
+    }
+
+    @Test
+    @DisplayName("Calcula terceira faixa De 800.01 até 1200.00 - 10%")
+    public void AumentoSalarialTerceiraFaixaTest(){
+        AumentoSalario aumentoTerceiraFaixa = new AumentoSalario();
+
+        aumentoTerceiraFaixa.calculaAumentoSalarial(1200.00f);
+        assertEquals(1320.00, 1320.00);
+    }
+
+    @Test
+    @DisplayName("Calcula quarta faixa De 1200.01 até 2000.00 - 7%")
+    public void AumentoSalarialQuartaFaixaTest(){
+        AumentoSalario aumentoQuartaFaixa = new AumentoSalario();
+
+        aumentoQuartaFaixa.calculaAumentoSalarial(1500.00f);
+        assertEquals(1605.00, 1605.00);
+    }
+
+    @Test
+    @DisplayName("Calcula quinta faixa Maior igual à 2000.00 - 4%")
+    public void AumentoSalarialQuintaFaixaTest(){
+        AumentoSalario aumentoQuintaFaixa = new AumentoSalario();
+
+        aumentoQuintaFaixa.calculaAumentoSalarial(2500.00f);
+        assertEquals(2600.00, 2600.00);
+    }
+}
+
