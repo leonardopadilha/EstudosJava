@@ -34,7 +34,7 @@ public class AumentoSalario {
                                "Reajuste ganho: " + formatarFloat.format(salarioFinal) + "\n" +
                                "Em percentual: "  + 7 + "%");
 
-        } else if (salario >= 2000.00) {
+        } else if (salario >= 2000.01) {
             salarioFinal = salario * 0.04f;
             System.out.println("Novo salário: "   + formatarFloat.format(salario + salarioFinal) + "\n" +
                                "Reajuste ganho: " + formatarFloat.format(salarioFinal) + "\n" +
