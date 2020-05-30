@@ -1,0 +1,47 @@
+package DesafioProgramandoTodoDia;
+
+import javax.swing.*;
+
+public class ValidarDDD {
+    public static void main(String[] args) {
+        String urlExercicio = "https://www.urionlinejudge.com.br/judge/pt/problems/view/1050";
+
+        int numeroDdd = Integer.parseInt(JOptionPane.showInputDialog("Informe um DDD: " + "\n" +
+                "61, 71, 11, 21, 32, 19, 27, 31"));
+
+        do {
+            switch (numeroDdd) {
+                case 61:
+                    JOptionPane.showMessageDialog(null,"Brasília");
+                    break;
+                case 71:
+                    JOptionPane.showMessageDialog(null,"Salvador");
+                    break;
+                case 11:
+                    JOptionPane.showMessageDialog(null,"São Paulo");
+                    break;
+                case 21:
+                    JOptionPane.showMessageDialog(null,"Rio de Janeiro");
+                    break;
+                case 32:
+                    JOptionPane.showMessageDialog(null,"Juiz de Fora");
+                    break;
+                case 19:
+                    JOptionPane.showMessageDialog(null,"Campinas");
+                    break;
+                case 27:
+                    JOptionPane.showMessageDialog(null,"Vitoria");
+                    break;
+                case 31:
+                    JOptionPane.showMessageDialog(null,"Belo Horizonte");
+                    break;
+                default:
+                    JOptionPane.showMessageDialog(null,"DDD nao cadastrado");
+                    break;
+            }numeroDdd = Integer.parseInt(JOptionPane.showInputDialog("Informe um DDD: " + "\n" +
+                    "61, 71, 11, 21, 32, 19, 27, 31 ou 0 para sair"));
+        }while (numeroDdd != 0);
+        JOptionPane.showMessageDialog(null, "Até logo!");
+    }
+}
+
