@@ -1,0 +1,33 @@
+package DesafioProgramacaoTest;
+
+import DesafioProgramandoTodoDia.Animal;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+
+public class ValidarAnimalTest {
+
+    @Test
+    @DisplayName("Valida tipo de Animal Vertebrado")
+    public void validaAnimalVertebradoTest(){
+
+        String urlExercicio = "https://www.urionlinejudge.com.br/judge/pt/problems/view/1049";
+
+        Animal tipoAnimalVertebrado = new Animal();
+
+        tipoAnimalVertebrado.animal("vertebrado", "ave", "carnivoro");
+        assertEquals("aguia", "aguia");
+    }
+    @Test
+    @DisplayName("Valida tipo de Animal Invertebrado ")
+    public void validaAnimalInvertebradoTest(){
+
+        Animal tipoAnimalInvertebrado = new Animal();
+
+        tipoAnimalInvertebrado.animal("Invertebrado", "Inseto", "Herbivoro");
+        assertEquals("lagarta", "lagarta");
+    }
+}
+

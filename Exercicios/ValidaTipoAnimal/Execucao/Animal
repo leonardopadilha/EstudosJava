@@ -1,0 +1,40 @@
+package DesafioProgramandoTodoDia;
+
+public class Animal {
+
+    public void animal(String primeiroAnimal, String segundoAnimal, String terceiroAnimal) {
+
+        if(primeiroAnimal.equalsIgnoreCase("vertebrado")){
+            if(segundoAnimal.equalsIgnoreCase("ave")){
+                if(terceiroAnimal.equalsIgnoreCase("carnivoro")){
+                    System.out.println("aguia");
+                }else{
+                    System.out.println("pomba");
+                }
+            }else{
+                if(terceiroAnimal.equalsIgnoreCase("onivoro")){
+                    System.out.println("homem");
+                }else{
+                    System.out.println("vaca");
+                }
+            }
+
+        }else{
+            if(segundoAnimal.equalsIgnoreCase("inseto")){
+                if(terceiroAnimal.equalsIgnoreCase("hematofago")){
+                    System.out.println("pulga");
+                }else{
+                    System.out.println("lagarta");
+                }
+
+            }else{
+                if(terceiroAnimal.equalsIgnoreCase("hematofago")){
+                    System.out.println("Sanguessuga");
+                }else{
+                    System.out.println("minhoca");
+                }
+            }
+        }
+    }
+}
+

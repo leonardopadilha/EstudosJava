@@ -1,0 +1,9 @@
+package DesafioProgramandoTodoDia;
+
+public class validarAnimal {
+    public static void main(String[] args) {
+        Animal animal = new Animal();
+        animal.animal("invertebrado", "anelideo", "onivoro");
+    }
+}
+
