@@ -1,0 +1,12 @@
+public class Main
+{
+	public static void main(String[] args) {
+		int distancia = 500;
+		float combustivel = 35.0f, consumoMedio;
+		
+		consumoMedio = distancia / combustivel;
+		
+		System.out.println(consumoMedio + " km/l");
+	
+	}
+}
