@@ -1,0 +1,33 @@
+package DesafioProgramandoTodoDia;
+
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
+import java.util.Locale;
+import java.util.Scanner;
+
+public class DistanciaEntreDoisPontos {
+
+    public static void main(String[] args) {
+
+        Scanner ler = new Scanner(System.in);
+        ler.useLocale(Locale.US);
+
+        NumberFormat resultado = NumberFormat.getCurrencyInstance(Locale.US);
+        ((DecimalFormat)resultado).applyPattern("0.0000");
+
+        System.out.print("Digite o primeiro número: ");
+        float x1 = ler.nextFloat();
+
+        System.out.print("Digite o segundo número: ");
+        float y1 = ler.nextFloat();
+
+        System.out.print("Digite o terceiro número: ");
+        float x2 = ler.nextFloat();
+
+        System.out.print("Digite o quarto número: ");
+        float y2 = ler.nextFloat();
+
+        float result = (float) Math.sqrt(Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2));
+        System.out.print(resultado.format(result));
+    }
+}

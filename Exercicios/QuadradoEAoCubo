@@ -1,0 +1,25 @@
+package ProgramacaoParaIniciantesUrion1143;
+
+import java.util.Scanner;
+
+public class QuadradoEAoCubo {
+    public static void main(String[] args) {
+
+        int count = 1;
+
+        Scanner ler = new Scanner(System.in);
+        int n = ler.nextInt();
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < 1; j++) {
+                for (int z = 0; z < 1; z++) {
+                    System.out.print(count + " ");
+                    System.out.print(count * count + " ");
+                    System.out.println(count * count * count);
+                }
+                count++;
+            }
+        }
+    }
+}
+
